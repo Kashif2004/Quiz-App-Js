@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz-=App</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-database.js"></script>
+</head>
+
+<body>
+    <section class="main">
+
+        <div class="container">
+            <div class="col">
+                <h3 id="questionBox">
+                    1) Lorem ipsum dolor sit amet, consectetur adipisicing elit Debitis?
+                </h3>
+            </div>
+            <div class="col box">
+                <input name="option" type="radio" id="first" value="a" required>
+                <label for="first">Testing 1</label>
+            </div>
+            <div class="col box">
+                <input name="option" type="radio" id="second" value="b" required>
+                <label for="second">Testing 2</label>
+            </div>
+            <div class="col box">
+                <input name="option" type="radio" id="third" value="c" required>
+                <label for="third">Testing 3</label>
+            </div>
+            <div class="col box">
+                <input name="option" type="radio" id="fourth" value="d" required>
+                <label for="fourth">Testing 4</label>
+            </div>
+            <button id="submit">Submit</button>
+        </div>
+
+    </section>
+    <script src="quiz.js"></script>
+    <script>
+        // Your web app's Firebase configuration
+
+  // Your web app's Firebase configuration
+  const firebaseConfig = {
+    apiKey: "AIzaSyB3i62cSQyHZZvvVoDygWzcRMBovseqKeg",
+    authDomain: "quiz-app-5b38c.firebaseapp.com",
+    databaseURL: "https://quiz-app-5b38c-default-rtdb.firebaseio.com",
+    projectId: "quiz-app-5b38c",
+    storageBucket: "quiz-app-5b38c.appspot.com",
+    messagingSenderId: "778073296180",
+    appId: "1:778073296180:web:282540c312b80ffa506961"
+  };
+
+  // Initialize Firebase
+  const app = firebase.initializeApp(firebaseConfig);
+    </script>
+</body>
+
+</html>
